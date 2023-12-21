@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@500&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-padding-top: 2rem;
+  scroll-behavior: smooth;
+}
+
+h1{
+  font-size: 50px;
+  line-height: 64px;
+  color: #222;
+  cursor: pointer;
+
+}
+
+h2{
+  font-size: 46px;
+  line-height: 54px;
+  color: #222;
+}
+
+h4{
+  font-size: 20px;
+  color: #222;
+  cursor: progress;
+}
+h6{
+  font-weight: 700;
+  font-size: 12px;
+}
+
+p{
+  font-size: 16px;
+  color: #465b52;
+  margin: 15px 0 20px 0;
+}
+
+.section-p1{
+  padding: 40px 80px;
+}
+
+.section-m1{
+  margin: 40px 0;
+}
+body{
+  width: 100%;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+.container{
+    width: 20rem;
+    height: 20rem;
+    background: white;
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    position: relative;
+    right: 10px;
+}
+
+.container div{
+    min-width: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10rem;
+    background-color: #222;
+    scroll-snap-align: center;
+    
+}
+
+.container div img{
+    width: 200px;
+    
+}
+
+.container .box2{
+    background-color: #088178;
+}
+
+
+
+/* header starts here */
+
+#header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background: #E3E6F3;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+
+#navbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navbar li{
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+
+#navbar li a{
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a1a;
+  cursor: pointer;
+  
+  transition: 0.5s ease-in-out;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+  color: #088178;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+  content: "";
+  width: 30px;
+  height: 2px;
+  background: #088178;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+  cursor: pointer;
+}
+
+
+
+/* Women page */
+#hero{
+  background-image: url(img/hero4.png);
+  height: 90vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top 25% right 0;
+  padding: 0 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#hero h4{
+  padding-bottom: 0.5rem;
+  margin-left: 5.6rem;
+}
+
+#hero p{
+    padding-bottom: 0.5rem;
+    margin-left: 5.6rem;
+}
+
+#hero h1{
+  color: #088178;
+  font-weight: 800;
+  margin-left: 5.6rem;
+}
+
+#hero button{
+  background: #088178;
+  border: 0;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 0.9rem;
+  padding: 14px 80px 14px 65px;
+  transition: 0.5s ease-in-out; 
+  cursor: pointer;
+  margin-left: 5.6rem;
+}
+
+#hero button:hover{
+  background: transparent;
+  border: 2px solid #088178;
+  border-color: #088178;
+  border-radius: 0.9rem;
+  color: #1a1a1a;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+/* shop page */
+
+#features{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#features .fe-box{
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid #cce7d0;
+    border-radius: 5px;
+    margin: 15px 0;
+}
+
+#features .fe-box:hover{
+  box-shadow: 20px 20px 54px rgba(70, 62, 221, 0.1);
+}
+
+#features .fe-box img{
+  width: 100%;
+  margin-bottom: 10px; 
+}
+
+#features .fe-box h6{
+    padding: 9px 8px 6px 8px;
+    background-color: #fddde4;
+    border-radius: 5px;
+    line-height: 1;
+    color: #088178;
+    display: inline-block ;
+}
+
+
+
+#product1 .pro-container {
+  width: 18%;
+  min-width: 250px;
+  border: 1px solid #cce7d0;
+  padding: 25px;
+}
+
+#product1 .pro img{
+  width: 100%;
+  border-radius: 20px;
+  margin-left: 25px;
+}
+
+#header a img{
+    width: 90px;
+}
+
+
+
+
+
+/* for kids styling */
+#kidhero{
+  background-image: url(img/shopping\ kid.jpg);
+  height: 90vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top 25% right 0;
+  padding: 0 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#kidhero h4{
+  padding-bottom: 0.5rem;
+  margin-left: 5.6rem;
+}
+
+#kidhero p{
+    padding-bottom: 0.5rem;
+    margin-left: 5.6rem;
+}
+
+#kidhero h1{
+  color: #088178;
+  font-weight: 800;
+  margin-left: 5.6rem;
+}
+
+#kidhero button{
+  background: #088178;
+  border: 0;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 0.9rem;
+  padding: 14px 80px 14px 65px;
+  transition: 0.5s ease-in-out; 
+  cursor: pointer;
+  margin-left: 5.6rem;
+}
+
+#kidhero button:hover{
+  background: transparent;
+  border: 2px solid #088178;
+  border-color: #088178;
+  border-radius: 0.9rem;
+  color: #1a1a1a;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#kid-header{
+  background-image: url("img/banner/b1.jpg");
+  opacity: 90%;
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 14px;
+  margin-top: 50px;
+
+}
+
+#kid-header h2,
+#kid-header p{
+  color: white;
+}
+
+
+/* for Product styling */
+
+#producthero{
+  background-image: url(img/productimgg.jpg);
+  height: 90vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top 25% right 0;
+  padding: 0 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#producthero h4{
+  padding-bottom: 0.5rem;
+  margin-left: 5.6rem;
+}
+
+#producthero p{
+    padding-bottom: 0.5rem;
+    margin-left: 5.6rem;
+}
+
+#producthero h1{
+  color: #088178;
+  font-weight: 800;
+  margin-left: 5.6rem;
+}
+
+#producthero button{
+  background: #088178;
+  border: 0;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 0.9rem;
+  padding: 14px 80px 14px 65px;
+  transition: 0.5s ease-in-out; 
+  cursor: pointer;
+  margin-left: 5.6rem;
+}
+
+#producthero button:hover{
+  background: transparent;
+  border: 2px solid #088178;
+  border-color: #088178;
+  border-radius: 0.9rem;
+  color: #1a1a1a;
+  font-size: 14px;
+  font-weight: 600;
+}

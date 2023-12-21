@@ -201,7 +201,7 @@ body{
   border: 1px solid #fff;
   border-radius: 20px;
   transform: scale(1);
-  transition: 0.2s ease-in-out;
+  transition: 0.5s ease-in-out;
   color: #fff;
 }
 
@@ -291,6 +291,12 @@ span, .cart{
   border-radius: 4px;
   color: #ffffff;
   font-weight: 600;
+}
+
+#pagination a:hover{
+  background-color: #088195;
+  transition: 0.5s ease-in-out;
+  box-shadow: #1a1a1a;
 }
 #pagination a i{
   font-size: 16px;

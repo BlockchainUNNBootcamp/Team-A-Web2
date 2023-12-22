@@ -267,6 +267,13 @@ html{
   text-align: center;
 }
 
+#wproducts .pro-container{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
 #wproducts .pro{
   width: 23%;
   min-width: 250px;
@@ -277,6 +284,7 @@ html{
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
   margin: 15px 0;
   transition: 0.2s ease;
+  position: relative; 
 }
 
 #wproducts .pro:hover{
@@ -295,7 +303,8 @@ html{
 
 #wproducts .pro .des span{
   color: #088178;
-  font-size: 12px;
+  font-size: 15px;
+  text-align: start;
 }
 
 #wproducts .pro .des h5{
@@ -307,8 +316,27 @@ html{
 #wproducts .pro .des i{
   color: rgb(243, 181, 25);
   font-size: 14px;
+} 
+#wproducts .pro .des h4{
+  padding-top: 7px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #088178; 
 }
 
+#wproducts .pro a .bart{
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50px;
+  background-color: #e8f6ea;
+  font-weight: 500;
+  color: #088178;
+  border-color: 1px solid #088178;
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+}
 
 
 

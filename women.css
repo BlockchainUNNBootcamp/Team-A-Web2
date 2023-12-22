@@ -63,7 +63,8 @@ html{
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     position: relative;
-    right: 10px;
+    right: -450px;
+    align-items: center;
 }
 
 .container div{
@@ -246,6 +247,39 @@ html{
     display: inline-block ;
 }
 
+#features .fe-box h6:nth-child(2){
+  background-color: #cdebbc;
+}
+#features .fe-box h6:nth-child(3){
+  background-color: #d1e8f2;
+}
+#features .fe-box h6:nth-child(4){
+  background-color: #cdd4f8;
+}
+#features .fe-box h6:nth-child(5){
+  background-color: #f6dbf6;
+}
+#features .fe-box h6:nth-child(6){
+  background-color: #fff2e5;
+}
+
+#wproducts {
+  text-align: center;
+}
+
+#wproducts .pro{
+  width: 23%;
+  min-width: 250px;
+  padding: 10px 12px;
+  border: 1px solid #cce7d0;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+#wproducts .pro img{
+  width: 100%;
+  border-radius: 20px;
+}
 
 
 #product1 .pro-container {

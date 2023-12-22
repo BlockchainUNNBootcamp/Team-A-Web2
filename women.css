@@ -64,6 +64,7 @@ html{
     scroll-snap-type: x mandatory;
     position: relative;
     right: -450px;
+    top: 30px;
     align-items: center;
 }
 
@@ -336,6 +337,62 @@ html{
   position: absolute;
   bottom: 20px;
   right: 10px;
+}
+
+#banner{
+ display: flex;
+ flex-direction: column;
+ justify-content: center; 
+ align-items: center;
+ text-align: center;
+ background-image: url("img/banner/b2.jpg");
+ width: 100%;
+ height: 40vh;
+ background-size: cover;
+ background-position: center;
+}
+
+#banner h4{
+  color: white ;
+  font-size: 16px;
+}
+
+#banner h2{
+  color: #088178;
+  font-size: 50px;
+  padding: 15px 5px;
+}
+
+#banner h2 span{
+  color: #ef3636;
+  font-size: 50px;
+  padding: 15px 5px;
+}
+
+#banner button{
+  color: #088178;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 15px 30px;
+  background-color: white;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+}
+
+#banner button:hover{
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 15px 30px;
+  background-color: #ef3636;
+  border: none;
+  outline: none;
+  transition: 0.2s;
 }
 
 

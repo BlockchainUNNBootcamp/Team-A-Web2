@@ -383,3 +383,74 @@ button.normal{
   transition: 0.2s;
 } 
 
+/* About Us page */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 20px 0;
+}
+
+h1 {
+  margin: 0;
+  color: #333;
+}
+
+.about-website, .team {
+  width: 80%;
+  margin: 20px auto;
+}
+
+h2 {
+  color: #333;
+}
+.team-team{
+  background-color: rgb(248, 207, 191);
+}
+#team-title{
+  display: flex;
+  justify-content: center;
+}
+.team{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.team-member {
+  margin-bottom: 30px;
+  max-width: 200px;
+}
+
+.team-member img {
+  max-width: 100px;
+  border-radius: 50%;
+  transition: transform 0.3s, border-radius 0.3s;
+}
+
+.team-member img:hover {
+  border-radius: 70%; /* Increasing border-radius for a rounder effect */
+  transform: scale(1.1); /* Adding a slight zoom effect on hover */
+}
+
+.mentor{
+  display: flex;
+  justify-content: center;
+}
+
+.more-info{
+  text-align: center;
+}
+
+.readme-btn{
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #088178;
+  border: 1px solid #088178;
+}

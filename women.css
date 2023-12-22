@@ -274,12 +274,44 @@ html{
   border: 1px solid #cce7d0;
   border-radius: 25px;
   cursor: pointer;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+  margin: 15px 0;
+  transition: 0.2s ease;
+}
+
+#wproducts .pro:hover{
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
 }
 
 #wproducts .pro img{
   width: 100%;
   border-radius: 20px;
 }
+
+#wproducts .pro .des{
+  text-align: start;
+  padding: 10px 0;
+}
+
+#wproducts .pro .des span{
+  color: #088178;
+  font-size: 12px;
+}
+
+#wproducts .pro .des h5{
+  padding-top: 7px;
+  color: #088178;
+  font-size: 14px;
+}
+
+#wproducts .pro .des i{
+  color: rgb(243, 181, 25);
+  font-size: 14px;
+}
+
+
+
+
 
 
 #product1 .pro-container {
@@ -458,7 +490,11 @@ html{
   border-radius: 15px;
   margin: 10px 5px;
   cursor: pointer;
-} 
+}
+
+#feature .fe-box i{
+  color: rgb(243, 181, 25);
+}
 
 #feature .fe-box img{
   width: 100vh;

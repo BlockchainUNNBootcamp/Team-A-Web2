@@ -116,8 +116,6 @@ body{
 }
 
 
-
-
 /* home/hero page */
 #hero{
   background: radial-gradient(#E3E6F3, #fff);
@@ -430,12 +428,6 @@ footer .copyright{
   .cart-container {
     display: flex;
     padding: 20px;
-    /* justify-content:center ;
-    padding: 2rem;
-    margin-top: 20px;
-    height: 200px;
-    gap: 20px;
-    */
   }
  
   .cart-item{

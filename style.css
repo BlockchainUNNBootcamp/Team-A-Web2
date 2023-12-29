@@ -448,6 +448,18 @@ footer .copyright{
     height: 200px;
     object-fit: cover;
   }
+  #Amount{
+    padding-bottom: 5 px;
+    align-items: center;
+  }
+  .remove{
+    /* padding-top: 5px; */
+    background: #088178;
+    color: #fff;
+  }
+  .summary{
+    padding-left: 20px;
+  }
   .item-details {
     /* border: 1px solid #ccc; */
     padding: 20px;
@@ -489,24 +501,6 @@ footer .copyright{
     background-color: #089;
   }
   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   /* favourite page styling begins here */
   .fav{
     display: flex;
@@ -526,5 +520,5 @@ footer .copyright{
   #img-fav{
     border-radius: 50px;
     height: 150px;
-    width: 300px;
+    width: 300px
   }

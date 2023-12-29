@@ -4,56 +4,97 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Favourite Page</title>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container">
-          <img src="./logo 1.png" alt="team-logo" class="logo">
-          <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="new & featured.html">New & Featured</a></li>
-            <li><a href="men.html">Men</a></li>
-            <li><a href="women.html">Women</a></li>
-            <li><a href="kids.html">Kids</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="favorite.html">Favourites</a></li>
-            <li><a href="about.html">About Us</a></li>
-          </ul>
-        </div>
-      </nav>
-      <h1 class="fav">Favourites</h1>
-      <h2>Welcome back</h2>
+  <section id="header">
+    <a href="#"><img id="img-logo" src="logo.png" alt="logo" ></a>
+
+    <div>
+      <ul id="navbar">
+        <li><a  href="index.html">Home</a></li>
+        <li><a href="new&featured.html">New & Featured</a></li>
+        <li><a href="men.html">Men</a></li>
+        <li><a href="women.html">Women</a></li>
+        <li><a href="kids.html">Kids</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a class="active" href="favorite.html">Favorite</a></li>
+        <li><a href="about us.html">About Us</a></li>
+        <li><a id="cart" href="./cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+      </ul>
+    </div>
+  </section> 
+
       <section class="favorites">
-        <h3>Your Favorite Items:</h3>
+        <h3 id="fav-head">Your Favorite Items:</h3>
   
-        <div class="products">
-          <div class="product-card">
+        <div class="fav">
+          <div class="fav-card">
             <svg aria-hidden="true" class="pre-nav-design-icon" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none">
               <path stroke="currentColor" stroke-width="1.5" d="M16.794 3.75c1.324 0 2.568.516 3.504 1.451a4.96 4.96 0 010 7.008L12 20.508l-8.299-8.299a4.96 4.96 0 010-7.007A4.923 4.923 0 017.205 3.75c1.324 0 2.568.516 3.504 1.451l.76.76.531.531.53-.531.76-.76a4.926 4.926 0 013.504-1.451"></path>
             </svg>
             
             <button class="favorite-icon"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
             
-            <img src="./mouise.jpg" alt="Product 1">
-            <h4>Bluetooth Mouse</h4>
-            <p class="price">$3</p>
-            <p class="description">Brief description highlighting key features or benefits.</p>
+            <img id="img-fav" src="./favourite/women-11.jpg" alt="Product 1">
+            <h4>Stunning Blue Gown</h4>
+            <p class="price">$29.50</p>
+            <p class="description">Elegent women's dress 
+              <br>
             <button class="add-to-cart">Add to Cart</button>
             <button class="remove-from-favorites">Remove from Favorites</button>
           </div>
   
           
-          <div class="product-card">
-            <span class="favorite-icon">❤️</span>
-            <img src="./mouse22.jpg" alt="Product 1">
-            <h4>Bluetooth Mouse</h4>
-            <p class="price">$3</p>
-            <p class="description">Brief description highlighting key features or benefits.</p>
+          <div class="fav-card">
+            <svg aria-hidden="true" class="pre-nav-design-icon" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none">
+              <path stroke="currentColor" stroke-width="1.5" d="M16.794 3.75c1.324 0 2.568.516 3.504 1.451a4.96 4.96 0 010 7.008L12 20.508l-8.299-8.299a4.96 4.96 0 010-7.007A4.923 4.923 0 017.205 3.75c1.324 0 2.568.516 3.504 1.451l.76.76.531.531.53-.531.76-.76a4.926 4.926 0 013.504-1.451"></path>
+            </svg>
+            
+            <button class="favorite-icon"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+            
+            <img id="img-fav" src="./favourite/women-33.jpg" alt="Product 1">
+            <h4>Ankara Gown</h4>
+            <p class="price">$45</p>
+            <p class="description">Native African Ankara Clothing
+              <br>
             <button class="add-to-cart">Add to Cart</button>
             <button class="remove-from-favorites">Remove from Favorites</button>
           </div>
+
+          <div class="fav-card">
+            <svg aria-hidden="true" class="pre-nav-design-icon" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none">
+              <path stroke="currentColor" stroke-width="1.5" d="M16.794 3.75c1.324 0 2.568.516 3.504 1.451a4.96 4.96 0 010 7.008L12 20.508l-8.299-8.299a4.96 4.96 0 010-7.007A4.923 4.923 0 017.205 3.75c1.324 0 2.568.516 3.504 1.451l.76.76.531.531.53-.531.76-.76a4.926 4.926 0 013.504-1.451"></path>
+            </svg>
+            
+            <button class="favorite-icon"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+            
+            <img id="img-fav" src="./favourite/women-12.jpg" alt="Product 1">
+            <h4>Stunning Blue Gown</h4>
+            <p class="price">$29.50</p>
+            <p class="description">Elegent women's dress 
+              <br>
+            <button class="add-to-cart">Add to Cart</button>
+            <button class="remove-from-favorites">Remove from Favorites</button>
+          </div>
+          <div class="fav-card">
+            <svg aria-hidden="true" class="pre-nav-design-icon" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none">
+              <path stroke="currentColor" stroke-width="1.5" d="M16.794 3.75c1.324 0 2.568.516 3.504 1.451a4.96 4.96 0 010 7.008L12 20.508l-8.299-8.299a4.96 4.96 0 010-7.007A4.923 4.923 0 017.205 3.75c1.324 0 2.568.516 3.504 1.451l.76.76.531.531.53-.531.76-.76a4.926 4.926 0 013.504-1.451"></path>
+            </svg>
+            
+            <button class="favorite-icon"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+            
+            <img id="img-fav" src="./favourite/agbada-22.jpg" alt="Product 1">
+            <h4>Stunning Blue Gown</h4>
+            <p class="price">$29.50</p>
+            <p class="description">Elegent women's dress 
+              <br>
+            <button class="add-to-cart">Add to Cart</button>
+            <button class="remove-from-favorites">Remove from Favorites</button>
+          </div>
+  
+  
     
         </div>
         <!-- Add more product cards here -->
@@ -61,7 +102,7 @@
       </section>
       
       <div class="actions">
-        <a href="shop.html">Continue Shopping</a>
+        <a href="./new&featured.html">Continue Shopping</a>
         <button class="empty-favorites">Empty Favorites</button>
       </div>
       <section id="newsletter" class="section-p1 section-m1">

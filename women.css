@@ -395,6 +395,78 @@ html{
   transition: 0.2s;
 }
 
+#sm-banner{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+}
+
+#sm-banner h4{
+  color: white;
+  font-size: 28px;
+  font-weight: 800;
+
+}
+
+#sm-banner h2{
+  color: #088178;
+  font-size: 28px;
+  font-weight: 800;
+
+}
+
+#sm-banner span{
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  padding-bottom: 15px;
+
+}
+
+#sm-banner button{
+  color: white;
+  font-size: 13px;
+  font-weight: 60000;
+  padding: 11px 18px;
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid white;
+  outline: none;
+  transition: 0.2s;
+}
+
+#sm-banner  button:hover{
+  background: #088178;
+  border: 1px solid #cce7d0;
+}
+
+#sm-banner .banner-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: flex-start;
+  background-image: url("img/banner/b17.jpg");
+  min-width: 580px;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+}
+
+#sm-banner .banner-box2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: flex-start;
+  background-image: url("img/banner/b10.jpg");
+  min-width: 580px;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+}
+
 
 
 

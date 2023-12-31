@@ -284,6 +284,56 @@
     background-color: #fff;
     color: #000;
   }
+  /* For mobile devices */
+@media screen and (max-width: 768px) {
+  .cart-container {
+    flex-direction: column; /* Display items in a column on smaller screens */
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .cart-item {
+    height: auto; /* Allow items to adjust height based on content */
+    margin-bottom: 20px; /* Add space between items */
+    border: none; /* Remove border for individual items */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add box shadow for each item */
+    transform: none; /* Reset transformation */
+  }
+
+  .cart-item > img {
+    width: 100%; /* Make images occupy full width */
+    height: auto; /* Allow images to adjust height */
+  }
+
+  .summary {
+    padding-left: 0; /* Reset padding for the summary section */
+  }
+
+  .item-details {
+    padding: 10px; /* Adjust padding for item details */
+  }
+
+  .item-details h3 {
+    font-size: 1.1em; /* Adjust font size for item titles */
+    margin-bottom: 8px; /* Adjust margin for item titles */
+  }
+
+  .item-details p {
+    font-size: 0.9em; /* Adjust font size for item details */
+    margin-bottom: 4px; /* Adjust margin for item details */
+  }
+
+  .action-buttons {
+    margin-top: 10px; /* Adjust margin for action buttons */
+  }
+
+  .checkout-button,
+  .continue-shopping-button {
+    padding: 8px 16px; /* Adjust padding for buttons */
+    font-size: 0.9em; /* Adjust font size for buttons */
+    margin-right: 8px; /* Adjust margin for buttons */
+  }
+}
+
 
   /* favourite page styling begins here */
  .favorites {
@@ -361,8 +411,19 @@
   color: #000;
 }
 
-
-
+.actions a{
+  background-color: #088178;
+  text-decoration: none;
+  border-radius: 10px;
+  color: #f2f2f2;
+  align-items: center;
+  padding: 5px;
+  border: 1px solid #088178;
+}
+.actions a:hover{
+  background-color: #fff;
+  color: #000;
+}
 .section-p1{
   padding: 40px 80px;
 }
@@ -382,14 +443,46 @@ button.normal{
   outline: none;
   transition: 0.2s;
 } 
+/* For mobile devices */
+@media screen and (max-width: 600px) {
+  .fav {
+    padding: 20px; /* Adjust padding for smaller screens */
+    justify-content: center; /* Center-align cards */
+  }
 
-/* About Us page */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+  .fav-card {
+    width: 100%; /* Allow cards to occupy full width */
+    margin: 10px 0; /* Adjust margin for smaller screens */
+    height: auto; /* Allow cards to adjust their height */
+    box-shadow: none; /* Remove box-shadow for smaller screens */
+    border: none; /* Remove border for smaller screens */
+  }
+
+  .fav-card img {
+    width: 100%; /* Make images occupy full width */
+    border-radius: 4px; /* Add border-radius to images */
+    margin-bottom: 10px; /* Adjust margin for smaller screens */
+  }
+
+  .price {
+    margin-top: 5px; /* Adjust margin for smaller screens */
+  }
+
+  .description {
+    margin-bottom: 15px; /* Adjust margin for smaller screens */
+  }
+
+  .add-to-cart,
+  .remove-from-favorites,
+  .empty-favorites,
+  .actions a {
+    padding: 8px 20px; /* Adjust padding for smaller screens */
+    font-size: 12px; /* Adjust font size for smaller screens */
+  }
 }
 
+
+/* About Us page */
 header {
   background-color: #f2f2f2;
   text-align: center;
@@ -424,7 +517,8 @@ h2 {
 
 .team-member {
   margin-bottom: 30px;
-  max-width: 200px;
+  max-width: 250px;
+  height: auto;
 }
 
 .team-member img {
@@ -437,20 +531,57 @@ h2 {
   border-radius: 70%; /* Increasing border-radius for a rounder effect */
   transform: scale(1.1); /* Adding a slight zoom effect on hover */
 }
-
+#mentor-hh{
+  display: flex;
+  justify-content: center;
+  color: #333;
+}
 .mentor{
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+}
+.team-mentor{
+  margin-bottom: 30px;
+  max-width: 400px;
+}
+.team-mentor img{
+  max-width: 100px;
+  border-radius: 50%;
+  transition: transform 0.3s, border-radius 0.3s;
 }
 
 .more-info{
   text-align: center;
 }
-
 .readme-btn{
-  padding: 10px;
-  text-decoration: none;
-  color: #fff;
   background-color: #088178;
+  text-decoration: none;
+  border-radius: 10px;
+  color: #f2f2f2;
+  align-items: center;
+  padding: 5px;
   border: 1px solid #088178;
+}
+.readme-btn:hover{
+  background-color: #fff;
+  color: #000;
+}
+/* For mobile devices */
+@media screen and (max-width: 600px) {
+  .about-website, .team {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+
+  .team-member {
+    max-width: 100%; /* Allow team member cards to occupy full width */
+  }
+
+  .team-member img {
+    max-width: 80px; /* Reduce image size for smaller screens */
+  }
+
+  .team-mentor {
+    max-width: 90%; /* Adjust mentor section width for smaller screens */
+  }
 }

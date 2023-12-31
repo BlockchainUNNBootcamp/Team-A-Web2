@@ -4,38 +4,159 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./dave.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>Favourite Page</title>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container">
-          <img src="./logo 1.png" alt="team-logo" class="logo">
-          <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="new & featured.html">New & Featured</a></li>
-            <li><a href="men.html">Men</a></li>
-            <li><a href="women.html">Women</a></li>
-            <li><a href="kids.html">Kids</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="favorite.html">Favourites</a></li>
-            <li><a href="about.html">About Us</a></li>
-          </ul>
+  <section id="header">
+    <a href="#"><img id="img-logo" src="logo.png" alt="logo" ></a>
+
+    <div>
+      <ul id="navbar">
+        <li><a  href="index.html">Home</a></li>
+        <li><a href="new&featured.html">New & Featured</a></li>
+        <li><a href="men.html">Men</a></li>
+        <li><a href="women.html">Women</a></li>
+        <li><a href="kids.html">Kids</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a class="active" href="favorite.html">Favorite</a></li>
+        <li><a href="about us.html">About Us</a></li>
+        <li><a id="cart" href="./cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+      </ul>
+    </div>
+  </section> 
+
+      <section class="favorites">
+        <h3 id="fav-head">Your Favorite Items:</h3>
+  
+        <div class="fav">
+          <div class="fav-card">
+            <svg aria-hidden="true" class="pre-nav-design-icon" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none">
+              <path stroke="currentColor" stroke-width="1.5" d="M16.794 3.75c1.324 0 2.568.516 3.504 1.451a4.96 4.96 0 010 7.008L12 20.508l-8.299-8.299a4.96 4.96 0 010-7.007A4.923 4.923 0 017.205 3.75c1.324 0 2.568.516 3.504 1.451l.76.76.531.531.53-.531.76-.76a4.926 4.926 0 013.504-1.451"></path>
+            </svg>
+            
+            <button class="favorite-icon"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+            
+            <img id="img-fav" src="./favourite/women-11.jpg" alt="Product 1">
+            <h4>Stunning Blue Gown</h4>
+            <p class="price">$29.50</p>
+            <p class="description">Elegent women's dress 
+              <br>
+            <button class="add-to-cart">Add to Cart</button>
+            <button class="remove-from-favorites">Remove from Favorites</button>
+          </div>
+  
+          
+          <div class="fav-card">
+            <svg aria-hidden="true" class="pre-nav-design-icon" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none">
+              <path stroke="currentColor" stroke-width="1.5" d="M16.794 3.75c1.324 0 2.568.516 3.504 1.451a4.96 4.96 0 010 7.008L12 20.508l-8.299-8.299a4.96 4.96 0 010-7.007A4.923 4.923 0 017.205 3.75c1.324 0 2.568.516 3.504 1.451l.76.76.531.531.53-.531.76-.76a4.926 4.926 0 013.504-1.451"></path>
+            </svg>
+            
+            <button class="favorite-icon"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+            
+            <img id="img-fav" src="./favourite/women-33.jpg" alt="Product 1">
+            <h4>Ankara Gown</h4>
+            <p class="price">$45</p>
+            <p class="description">Native African Ankara Clothing
+              <br>
+            <button class="add-to-cart">Add to Cart</button>
+            <button class="remove-from-favorites">Remove from Favorites</button>
+          </div>
+
+          <div class="fav-card">
+            <svg aria-hidden="true" class="pre-nav-design-icon" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none">
+              <path stroke="currentColor" stroke-width="1.5" d="M16.794 3.75c1.324 0 2.568.516 3.504 1.451a4.96 4.96 0 010 7.008L12 20.508l-8.299-8.299a4.96 4.96 0 010-7.007A4.923 4.923 0 017.205 3.75c1.324 0 2.568.516 3.504 1.451l.76.76.531.531.53-.531.76-.76a4.926 4.926 0 013.504-1.451"></path>
+            </svg>
+            
+            <button class="favorite-icon"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+            
+            <img id="img-fav" src="./favourite/women-12.jpg" alt="Product 1">
+            <h4>Short flay Gown</h4>
+            <p class="price">$19.50</p>
+            <p class="description">Short gown with additional accesories
+              <br>
+            <button class="add-to-cart">Add to Cart</button>
+            <button class="remove-from-favorites">Remove from Favorites</button>
+          </div>
+          <div class="fav-card">
+            <svg aria-hidden="true" class="pre-nav-design-icon" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none">
+              <path stroke="currentColor" stroke-width="1.5" d="M16.794 3.75c1.324 0 2.568.516 3.504 1.451a4.96 4.96 0 010 7.008L12 20.508l-8.299-8.299a4.96 4.96 0 010-7.007A4.923 4.923 0 017.205 3.75c1.324 0 2.568.516 3.504 1.451l.76.76.531.531.53-.531.76-.76a4.926 4.926 0 013.504-1.451"></path>
+            </svg>
+            
+            <button class="favorite-icon"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+            
+            <img id="img-fav" src="./favourite/agbada-22.jpg" alt="Product 1">
+            <h4>Men Agbada</h4>
+            <p class="price">$40</p>
+            <p class="description">Traditional Attire for men
+              <br>
+            <button class="add-to-cart">Add to Cart</button>
+            <button class="remove-from-favorites">Remove from Favorites</button>
+          </div>
+  
+  
+    
         </div>
-      </nav>
-      <h1 class="fav">Favourites</h1>
-      <div class="fav-container">
-        
-          <img id="img-fav" src="./shoes.jpg" alt="">
-        
-        <div class="fav-buttons">
-          <button class="fav-btn-1">
-            Move to Cart
-          </button>
-          <button class="fav-btn-1">
-            Delete from Cart
-          </button>
-        </div>
+        <!-- Add more product cards here -->
+  
+      </section>
+      
+      <div class="actions">
+        <a href="./new&featured.html">Continue Shopping</a>
+        <button class="empty-favorites">Empty Favorites</button>
       </div>
-</body>
+      <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+          <h4>Sign Up For Newsletters</h4>
+          <p>Get E-mail updates about our latest shop and special offers.</p>
+        </div>
+        <div class="form">
+          <input type="text" placeholder="Your email address">
+          <button class="normal">Sign Up</button>
+        </div>
+      </section>
+    <footer class="section-p1">
+        <div class="col">
+          <img class="logo" src="logo.png" alt="ichain-brand logo"  style="width: 150px;">
+          <h4>Contact</h4>
+          <p><strong>Address:</strong> University of Nigeria, Nsukka, Enugu state.</p>
+          <p><strong>Phone:</strong> +234(0) 8132535835, +234(0) 9042360422, +234(0) 7086337316 </p>
+          <p><strong>Hours:</strong> University of Nigeria, Nsukka, Enugu state.</p>
+          <div class="follow">
+            <h4>follow us</h4>
+            <div class="icon">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-youtube"></i>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col">
+          <h4>About</h4>
+          <a href="#">Abouts Us</a>
+          <a href="#">Delivery Information</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Contact Us</a>
+        </div>
+    
+        <div class="col">
+          <h4>My Account</h4>
+          <a href="#">Sign In</a>
+          <a href="#">View Cart</a>
+          <a href="#">My Wishlist</a>
+          <a href="#">Track My Order</a>
+          <a href="#">Help</a>
+        </div>
+    
+        <div class="copyright">
+          <p>@Maxpeters, @Didi, @David Ehirim 2023, Team A Ecommerce Website Assessment</p>
+        </div>
+      
+    </footer>
+  </body>
 </html>

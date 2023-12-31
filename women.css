@@ -63,7 +63,8 @@ html{
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     position: relative;
-    right: 10px;
+    right: -450px;
+    align-items: center;
 }
 
 .container div{
@@ -141,6 +142,15 @@ html{
   bottom: -4px;
   left: 20px;
   cursor: pointer;
+}
+
+#mobile{
+  display: none;
+  align-items: center;
+}
+
+#close{
+  display: none;
 }
 
 
@@ -236,6 +246,71 @@ html{
     color: #088178;
     display: inline-block ;
 }
+
+#features .fe-box h6:nth-child(2){
+  background-color: #cdebbc;
+}
+#features .fe-box h6:nth-child(3){
+  background-color: #d1e8f2;
+}
+#features .fe-box h6:nth-child(4){
+  background-color: #cdd4f8;
+}
+#features .fe-box h6:nth-child(5){
+  background-color: #f6dbf6;
+}
+#features .fe-box h6:nth-child(6){
+  background-color: #fff2e5;
+}
+
+#wproducts {
+  text-align: center;
+}
+
+#wproducts .pro{
+  width: 23%;
+  min-width: 250px;
+  padding: 10px 12px;
+  border: 1px solid #cce7d0;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+  margin: 15px 0;
+  transition: 0.2s ease;
+}
+
+#wproducts .pro:hover{
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+#wproducts .pro img{
+  width: 100%;
+  border-radius: 20px;
+}
+
+#wproducts .pro .des{
+  text-align: start;
+  padding: 10px 0;
+}
+
+#wproducts .pro .des span{
+  color: #088178;
+  font-size: 12px;
+}
+
+#wproducts .pro .des h5{
+  padding-top: 7px;
+  color: #088178;
+  font-size: 14px;
+}
+
+#wproducts .pro .des i{
+  color: rgb(243, 181, 25);
+  font-size: 14px;
+}
+
+
+
 
 
 
@@ -415,7 +490,11 @@ html{
   border-radius: 15px;
   margin: 10px 5px;
   cursor: pointer;
-} 
+}
+
+#feature .fe-box i{
+  color: rgb(243, 181, 25);
+}
 
 #feature .fe-box img{
   width: 100vh;
@@ -572,4 +651,56 @@ footer a:hover{
 footer .copyright{
   width: 100%;
   text-align: center;
+}
+
+
+/* start media Query */
+@media (max-width:799px) {
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: 0px;
+    height: 100vh;
+    width: 300px;  
+    background-color: #E3E6F3;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    padding: 80px 0 0 10px;
+    transition: 0.3s;
+  }
+
+  #navbar.active {
+    right: 0px;
+     
+  }
+
+  #navbar li{
+    margin-bottom: 25px;
+  }
+
+  #mobile {
+    display: flex;
+    align-items: center;
+  }
+  
+  #mobile i{
+    color: #1a1a1a;
+    font-size: 24px;
+    padding-left: 20px;
+  }
+
+  #close {
+    display: initial;
+    position: absolute; 
+    top: 30px;
+    left: 30px;
+    color: #222;
+    font-size: 24px;
+  }
+  #lgbag {
+    display: none;
+  }
 }

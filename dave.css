@@ -278,61 +278,80 @@
     font-weight: bold;
     margin-right: 10px;
   }
-
+  .continue-shopping-button a{
+    text-decoration: none;
+    color:inherit; 
+  }
   .checkout-button:hover,
   .continue-shopping-button:hover {
     background-color: #fff;
     color: #000;
   }
+  .continue-shopping-button a :hover{
+    color: #000; 
+  }
   /* For mobile devices */
-@media screen and (max-width: 768px) {
-  .cart-container {
-    flex-direction: column; /* Display items in a column on smaller screens */
-    padding: 10px; /* Adjust padding for smaller screens */
+  @media screen and (max-width: 768px) {
+    .cart-container {
+      flex-direction: column; /* Display items in a column on smaller screens */
+      padding: 10px; /* Adjust padding for smaller screens */
+    }
+  
+    .cart-item {
+      height: auto; /* Allow items to adjust height based on content */
+      margin-bottom: 20px; /* Add space between items */
+      border: none; /* Remove border for individual items */
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add box shadow for each item */
+      transform: none; /* Reset transformation */
+      flex-direction: column; /* Change layout to a column for individual items */
+    }
+  
+    .cart-item > img {
+      width: 100%; /* Make images occupy full width */
+      height: auto; /* Allow images to adjust height */
+      object-fit: cover; /* Maintain aspect ratio */
+      max-height: 200px; /* Limit max height for images */
+    }
+  
+    .item-details {
+      padding: 10px; /* Adjust padding for item details */
+    }
+  
+    .item-details h3 {
+      font-size: 1.1em; /* Adjust font size for item titles */
+      margin-bottom: 8px; /* Adjust margin for item titles */
+    }
+  
+    .item-details p {
+      font-size: 0.9em; /* Adjust font size for item details */
+      margin-bottom: 4px; /* Adjust margin for item details */
+    }
+  
+    .remove {
+      display: flex; /* Ensure the remove button is displayed */
+      align-items: center; /* Align button with other elements */
+    }
+  
+    .remove-btn {
+      margin-top: 10px;
+      align-self: flex-start;
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+    }
+  
+    .action-buttons {
+      margin-top: 10px; /* Adjust margin for action buttons */
+    }
+  
+    /* Additional styling for checkout and continue shopping buttons */
+    .checkout-button,
+    .continue-shopping-button {
+      padding: 8px 16px; /* Adjust padding for buttons */
+      font-size: 0.9em; /* Adjust font size for buttons */
+      margin-right: 8px; /* Adjust margin for buttons */
+    }
   }
-
-  .cart-item {
-    height: auto; /* Allow items to adjust height based on content */
-    margin-bottom: 20px; /* Add space between items */
-    border: none; /* Remove border for individual items */
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add box shadow for each item */
-    transform: none; /* Reset transformation */
-  }
-
-  .cart-item > img {
-    width: 100%; /* Make images occupy full width */
-    height: auto; /* Allow images to adjust height */
-  }
-
-  .summary {
-    padding-left: 0; /* Reset padding for the summary section */
-  }
-
-  .item-details {
-    padding: 10px; /* Adjust padding for item details */
-  }
-
-  .item-details h3 {
-    font-size: 1.1em; /* Adjust font size for item titles */
-    margin-bottom: 8px; /* Adjust margin for item titles */
-  }
-
-  .item-details p {
-    font-size: 0.9em; /* Adjust font size for item details */
-    margin-bottom: 4px; /* Adjust margin for item details */
-  }
-
-  .action-buttons {
-    margin-top: 10px; /* Adjust margin for action buttons */
-  }
-
-  .checkout-button,
-  .continue-shopping-button {
-    padding: 8px 16px; /* Adjust padding for buttons */
-    font-size: 0.9em; /* Adjust font size for buttons */
-    margin-right: 8px; /* Adjust margin for buttons */
-  }
-}
 
 
   /* favourite page styling begins here */
@@ -502,9 +521,10 @@ h1 {
 h2 {
   color: #333;
 }
-.team-team{
-  background-color: rgb(248, 207, 191);
+.team-team {
+  background-image: linear-gradient(to bottom right, #F8CFBF, #F5A8A8); /* Replace these color codes with your preferred gradient colors */
 }
+
 #team-title{
   display: flex;
   justify-content: center;
